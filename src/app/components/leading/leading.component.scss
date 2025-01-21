@@ -1,0 +1,54 @@
+#main {
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin-right: 15px;
+            font-size: clamp(20px, 5vw, 50px);
+            color: rgb(255, 0, 136);
+            font-weight: bold;
+            text-align: justify;
+            animation: textanimation 3s infinite;
+        }
+    
+        @keyframes textanimation {
+    
+            0%,
+            100% {
+                opacity: 1;
+            }
+    
+            50% {
+                opacity: 0;
+            }
+        }
+        button{
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: rgba(255, 183, 0, 0.862);
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(255, 183, 0);
+            transform: translateX(100%);
+        }
+    }
+    
+}

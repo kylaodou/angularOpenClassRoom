@@ -1,0 +1,58 @@
+.face-snap-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(238, 39, 145, 0.241);
+    box-shadow: lightgray 4px 4px 20px;
+    transition: 1.5s;
+    h2, p{
+        text-align: center;
+    }
+    img{
+        border-radius: 10px;
+        width: 100%;
+        min-height: 300px;
+    }
+    #like{
+        background-color: rgba(255, 255, 255, 0.437);
+        border-radius: 5px;
+        padding: 6px;
+        border: none;
+        width: 100%;
+        transition: 0.2s;
+        &:active {
+            transform: translate(1px, 1px);
+            box-shadow: lightgray 0 0 5px;
+          }
+    }
+    #like:hover{
+        background-color: rgba(255, 255, 255, 0.588);
+        cursor: pointer;
+    }
+    &:hover {
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+    
+}
+.snapped {
+    background-color: rgba(238, 39, 145, 0.462);
+    box-shadow: rgb(255, 141, 211) 4px 4px 20px;
+    animation: rotate 1s;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
