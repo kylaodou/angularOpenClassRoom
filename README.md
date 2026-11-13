@@ -1,59 +1,36 @@
-# OpenClassRoomTuto
+# Snapface — Apprentissage d'Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+Application Angular réalisée en suivant le cours OpenClassrooms « Débutez avec Angular ». Elle
+affiche une galerie de « FaceSnaps » (photos avec titre, description et compteur de « snaps »)
+et permet d'ouvrir le détail de chacune.
 
-## Development server
+## Notions travaillées
 
-To start a local development server, run:
+- Composants standalone et liaison de données (interpolation, property et event binding).
+- Directives structurelles et pipes (dates, majuscules...).
+- Modèle de données TypeScript (`FaceSnap`).
+- Service injectable pour centraliser les données.
+- Routage : page d'accueil, liste et page de détail (`single-face-snap`).
+- Composant d'en-tête partagé.
 
-```bash
-ng serve
-```
+## Stack technique
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 19
+- TypeScript
 
-## Code scaffolding
+## Lancement
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Prérequis : Node.js 20+ et Angular CLI 19.
 
 ```bash
-ng build
+git clone https://github.com/kylaodou/angularOpenClassRoom.git
+cd angularOpenClassRoom
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Ouvrez http://localhost:4200.
 
-## Running unit tests
+## Auteur
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[@kylaodou](https://github.com/kylaodou)
