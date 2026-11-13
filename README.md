@@ -15,12 +15,12 @@ et permet d'ouvrir le détail de chacune.
 
 ## Stack technique
 
-- Angular 19
+- Angular 21
 - TypeScript
 
 ## Lancement
 
-Prérequis : Node.js 20+ et Angular CLI 19.
+Prérequis : Node.js 20+ et Angular CLI 21.
 
 ```bash
 git clone https://github.com/kylaodou/angularOpenClassRoom.git
